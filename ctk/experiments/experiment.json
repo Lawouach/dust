@@ -20,7 +20,8 @@
         "tracing_provider": "opentelemetry",
         "tracing_opentelemetry_exporter": "jaeger-grpc",
         "tracing_opentelemetry_collector_endpoint": "10.152.183.30:14250",
-        "tracing_opentelemetry_collector_endpoint_insecure": true
+        "tracing_opentelemetry_collector_endpoint_insecure": true,
+        "tracing_opentelemetry_baggage_prefix": "b3"
     },
     "controls": [
         {
