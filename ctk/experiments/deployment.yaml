@@ -15,7 +15,7 @@ spec:
         app: ctk-tracing
     spec:
       containers:
-      - image: lawouach/opentracing-example
+      - image: lawouach/opentracing-example:latest
         name: ctk-tracing
         imagePullPolicy: Always
         command:
