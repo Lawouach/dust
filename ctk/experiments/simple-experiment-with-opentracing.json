@@ -1,0 +1,35 @@
+{
+    "title": "n/a",
+    "description": "n/a",
+    "steady-state-hypothesis": {
+        "title": "na",
+        "probes": [
+            {
+                "name": "print-hello",
+                "type": "probe",
+                "tolerance": 0,
+                "provider": {
+                    "type": "process",
+                    "path": "echo",
+                    "arguments": "hello world"
+                }
+            }
+        ]
+    },
+    "configuration": {
+        "tracing_provider": "jaeger",
+        "tracing_host": "10.152.183.183",
+        "tracing_port": 6831,
+        "tracing_propagation": "b3"
+    },
+    "controls": [
+        {
+            "name": "opentracing",
+            "provider": {
+                "type": "python",
+                "module": "chaostracing.control"
+            }
+        }
+    ],
+    "method": []
+}
