@@ -17,10 +17,10 @@
         ]
     },
     "configuration": {
-        "tracing_provider": "jaeger",
-        "tracing_host": "10.152.183.183",
-        "tracing_port": 6831,
-        "tracing_propagation": "b3"
+        "tracing_provider": "opentelemetry",
+        "tracing_opentelemetry_exporter": "jaeger-grpc",
+        "tracing_opentelemetry_collector_endpoint": "10.152.183.30:14250",
+        "tracing_opentelemetry_collector_endpoint_insecure": true
     },
     "controls": [
         {
